@@ -5,20 +5,20 @@
 class HttpPing < Formula
   desc "Http-Ping is similar to the usual ping networking utility but instead of working on top of ICMP, it works on top of HTTP/S."
   homepage "Http-Ping is similar to the usual ping networking utility but instead of working on top of ICMP, it works on top of HTTP/S."
-  version "0.9.6"
+  version "0.9.7"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.6/http-ping_0.9.6_darwin_arm64.tar.gz"
-      sha256 "be2345abc3ec1c5a287d3c56aa432ce2b368959ca970f59ade1c12f3ae58aca3"
+    if Hardware::CPU.intel?
+      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.7/http-ping_0.9.7_darwin_amd64.tar.gz"
+      sha256 "beb4faeb582852923397ea6dce2edeeb377d356f7ec6a3ffa877bd9dd565f29d"
 
       def install
         bin.install "http-ping"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.6/http-ping_0.9.6_darwin_amd64.tar.gz"
-      sha256 "ddd77b9bc5c6ea18ce8499980e952a6c3e7cf3b69679bf4137bd5c664bef3cfe"
+    if Hardware::CPU.arm?
+      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.7/http-ping_0.9.7_darwin_arm64.tar.gz"
+      sha256 "3e2564968333cd5c51a6b63f89008494dedd7d2afb2f17e1f354531352091f53"
 
       def install
         bin.install "http-ping"
@@ -28,16 +28,16 @@ class HttpPing < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.6/http-ping_0.9.6_linux_arm64.tar.gz"
-      sha256 "4f9ddc0c19ccee886e6ee2b3fe0d8b7129ad51bac6a3a76f80a1ebfbcc342ab6"
+      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.7/http-ping_0.9.7_linux_arm64.tar.gz"
+      sha256 "0cefd48f02cbdc28f9b706383d3fd5cbb2b4da443a783a9e36beccd8ca6a9b52"
 
       def install
         bin.install "http-ping"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.6/http-ping_0.9.6_linux_amd64.tar.gz"
-      sha256 "53f7992d94ef8a13c378def85b687b2e303d4bfe9915148b92188a1d58edb6de"
+      url "https://github.com/fever-ch/http-ping/releases/download/v0.9.7/http-ping_0.9.7_linux_amd64.tar.gz"
+      sha256 "cf6df17d99a9d041bf23078e6f39092a98c5295d405b81fe701d05a27a4ef1b2"
 
       def install
         bin.install "http-ping"
