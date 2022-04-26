@@ -5,20 +5,20 @@
 class HttpPing < Formula
   desc "Http-Ping is similar to the usual ping networking utility but instead of working on top of ICMP, it works on top of HTTP/S."
   homepage "Http-Ping is similar to the usual ping networking utility but instead of working on top of ICMP, it works on top of HTTP/S."
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.0/http-ping_1.1.0_darwin_amd64.tar.gz"
-      sha256 "e7aafe3ad5dfdac930e5b006aefab4f41e5186d57d2b75d33e788facc946a9ac"
+      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.1/http-ping_1.1.1_darwin_amd64.tar.gz"
+      sha256 "064b95d098bf6e2b5b3d15e49018182912767fd1057b75f3736b72a4661809c9"
 
       def install
         bin.install "http-ping"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.0/http-ping_1.1.0_darwin_arm64.tar.gz"
-      sha256 "77be6c058d4f9bf58926e17da8a13c293470a742b969b93e6a92bef0495e179c"
+      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.1/http-ping_1.1.1_darwin_arm64.tar.gz"
+      sha256 "8a8f3f49489a70b17e478133e61fef4d36ec6abf0ffbe27eab0add914466c1aa"
 
       def install
         bin.install "http-ping"
@@ -28,16 +28,16 @@ class HttpPing < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.0/http-ping_1.1.0_linux_amd64.tar.gz"
-      sha256 "c9dd22d00b714493c9245c11c1059809ca5809f16da5f26d741d0622e16fb457"
+      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.1/http-ping_1.1.1_linux_amd64.tar.gz"
+      sha256 "9adb7faf765be08c24079140d978ec575f3caae73750de2e5cf17586bc72b812"
 
       def install
         bin.install "http-ping"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.0/http-ping_1.1.0_linux_arm64.tar.gz"
-      sha256 "4b015a4be286d40d1a06c4b2f2e89058ec0f17c41c7c48a68ce1056e213e0254"
+      url "https://github.com/fever-ch/http-ping/releases/download/v1.1.1/http-ping_1.1.1_linux_arm64.tar.gz"
+      sha256 "5caa7992ebd0d036a70ffc290740b39ddabae2af802f1f3ef407616b5860a5dc"
 
       def install
         bin.install "http-ping"
