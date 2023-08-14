@@ -10,7 +10,7 @@ class HttpPing < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/fever-ch/http-ping/releases/download/v1.2.3/http-ping_1.2.3_darwin_amd64.tar.gz"
-      sha256 "5d46e92b76821e6c5e4d166049239aa8df68ec21e7798b1d3c4c29f8d1395bac"
+      sha256 "0f2cd6f23996a470c8d91029b0c8a02106534c62fb940c6818e345c491d5dfbe"
 
       def install
         bin.install "http-ping"
@@ -18,7 +18,7 @@ class HttpPing < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/fever-ch/http-ping/releases/download/v1.2.3/http-ping_1.2.3_darwin_arm64.tar.gz"
-      sha256 "8caac59a0deea116422a2b046feb338a9def46476d02a9e67fe1d7f4ff7fde21"
+      sha256 "15b05290460447d625416bcfeac9f1baf0f69ee2cd078eb200a023fac66a47f3"
 
       def install
         bin.install "http-ping"
@@ -29,7 +29,7 @@ class HttpPing < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/fever-ch/http-ping/releases/download/v1.2.3/http-ping_1.2.3_linux_arm64.tar.gz"
-      sha256 "87258c1477b28714d2a6c9846abe7f9d9c4723ae93aee66f75d2330ea8cbb275"
+      sha256 "5eb46a2a5bd93b96c1a483b87d9755c99f5af706a7da0fd55c060e3de5cc887f"
 
       def install
         bin.install "http-ping"
@@ -37,7 +37,7 @@ class HttpPing < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/fever-ch/http-ping/releases/download/v1.2.3/http-ping_1.2.3_linux_amd64.tar.gz"
-      sha256 "12dece8217772e4d8fe3611dd8f9713b8a9f54a0a6f8bb14baa9f8403b17ad25"
+      sha256 "dc40ea258e1a67d57cf7aec0e67031e2feae0b26e4737af6747c172dab1dfaa9"
 
       def install
         bin.install "http-ping"
